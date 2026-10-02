@@ -34,6 +34,7 @@ public class ChangeArrivalDeadlineDateDialog implements Serializable {
         .openDynamic("/admin/dialogs/changeArrivalDeadlineDate.xhtml", options, params);
   }
 
+  // The invoking view performs its refresh through the dialogReturn update.
   public void handleReturn(SelectEvent<?> event) {}
 
   public void cancel() {
