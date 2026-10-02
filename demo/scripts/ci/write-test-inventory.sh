@@ -19,6 +19,7 @@ mkdir -p "$out"
   printf 'org.eclipse.cargotracker.architecture.LayeringTest\tactive\tJUnit 5 architecture baseline\n'
   printf 'org.eclipse.cargotracker.interfaces.booking.facade.BookingFacadeDtoTest\tactive\tJUnit 5 facade and DTO boundary\n'
   printf 'org.eclipse.cargotracker.interfaces.booking.web.ChangeArrivalDeadlineDateTest\tactive\tJUnit 5 focused deadline editor backing bean\n'
+  printf 'org.eclipse.cargotracker.interfaces.booking.web.ChangeArrivalDeadlineDateDialogTest\tactive\tJUnit 5 focused deadline dialog launcher\n'
 } > "$out/test-inventory.tsv"
 
 discovered="$(mktemp)"
@@ -33,6 +34,6 @@ if ! diff -u "$declared" "$discovered"; then
   exit 1
 fi
 
-test "$(grep -c $'\tactive\t' "$out/test-inventory.tsv")" -eq 9
+test "$(grep -c $'\tactive\t' "$out/test-inventory.tsv")" -eq 10
 test "$(grep -c $'\tdormant\t' "$out/test-inventory.tsv")" -eq 3
-printf 'active=9 dormant=3 repaired=0 removed=0\n' > "$out/test-inventory-summary.txt"
+printf 'active=10 dormant=3 repaired=0 removed=0\n' > "$out/test-inventory-summary.txt"
