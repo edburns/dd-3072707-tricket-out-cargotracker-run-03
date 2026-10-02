@@ -50,6 +50,9 @@ public class DefaultBookingServiceFacade implements BookingServiceFacade, Serial
   @Override
   public CargoRoute loadCargoForRouting(String trackingId) {
     Cargo cargo = cargoRepository.find(new TrackingId(trackingId));
+    if (cargo == null) {
+      return null;
+    }
     CargoRouteDtoAssembler assembler = new CargoRouteDtoAssembler();
     return assembler.toDto(cargo);
   }
