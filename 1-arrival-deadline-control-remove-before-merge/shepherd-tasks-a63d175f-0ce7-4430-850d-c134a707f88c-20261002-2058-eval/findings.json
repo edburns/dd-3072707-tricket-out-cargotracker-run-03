@@ -1,0 +1,977 @@
+{
+  "schemaVersion" : "1.2",
+  "evaluator" : {
+    "name" : "shepherd-task-evaluator",
+    "version" : "0.3.1",
+    "gitCommit" : "6f14b5b41c74aea438c50794ee01ef6d496c922e",
+    "worktreeDirty" : true,
+    "sourceDirectory" : "/Users/edburns/workareas/dd-3070518-cargotracker-darwin-arm64-01-shepherd-control/dd-3071779-evidence-collection-remove-before-merge/shepherd-task-evaluator",
+    "generatedAt" : "2026-10-02T22:06:40.642110Z",
+    "platform" : "Mac OS X-aarch64",
+    "invocation" : [ "--evaluator-dir", "/Users/edburns/workareas/dd-3070518-cargotracker-darwin-arm64-01-shepherd-control/dd-3071779-evidence-collection-remove-before-merge/shepherd-task-evaluator", "dd-3072707-tricket-out-cargotracker-run-03/1-arrival-deadline-control-remove-before-merge/shepherd-tasks-a63d175f-0ce7-4430-850d-c134a707f88c-20261002-2058", "--arm", "control", "--repo", "dd-3072707-tricket-out-cargotracker-run-03", "--with-build" ],
+    "arm" : "control"
+  },
+  "campaign" : {
+    "arm" : "control",
+    "campaignId" : "a63d175f-0ce7-4430-850d-c134a707f88c",
+    "campaignDirectory" : "/Users/edburns/workareas/dd-3072707-tricket-out-cargotracker-run-03/1-arrival-deadline-control-remove-before-merge/shepherd-tasks-a63d175f-0ce7-4430-850d-c134a707f88c-20261002-2058",
+    "repository" : "edburns/dd-3072707-tricket-out-cargotracker-run-03",
+    "baseBranch" : "edburns/dd-3016202-cargotracker-devoxx-be-2026-add-feature-control",
+    "lessonPropagation" : "off",
+    "taskIssues" : [ 6 ],
+    "startedAt" : "2026-10-02T20:58:56Z",
+    "completedAt" : "2026-10-02T21:11:21Z",
+    "status" : "succeeded",
+    "exitCode" : 0,
+    "wallTimeSeconds" : 745,
+    "recordedSessionTimeSeconds" : 601,
+    "jsonlSessionTimeMs" : 601409,
+    "durationSourceDifferenceMs" : 409,
+    "primarySessionDurationSource" : "markdown_header_truncated_seconds",
+    "transcriptTimestampConversionMethod" : "Local header timestamps are converted with the UTC offset that best aligns the header start with the first JSONL timestamp.",
+    "orchestrationOverheadSeconds" : 144,
+    "evaluatorVersion" : "0.3.1",
+    "evaluatorGitCommit" : "6f14b5b41c74aea438c50794ee01ef6d496c922e"
+  },
+  "evidenceQuality" : {
+    "phaseSessionCount" : 2,
+    "missingExpectedArtifacts" : [ ],
+    "externalizedOutputMarkers" : [ {
+      "taskIssue" : 6,
+      "shepherdStage" : 30,
+      "count" : 1,
+      "confirmedEvidenceGaps" : 0,
+      "interpretation" : "Output was preserved by Markdown or JSONL partial-output evidence."
+    }, {
+      "taskIssue" : 6,
+      "shepherdStage" : 40,
+      "count" : 1,
+      "confirmedEvidenceGaps" : 0,
+      "interpretation" : "Output was preserved by Markdown or JSONL partial-output evidence."
+    } ],
+    "confirmedEvidenceGapCount" : 0,
+    "jsonlPartialOutputCrossCheck" : {
+      "eventCount" : 441,
+      "unicodeCodePointCount" : 1439103,
+      "utf16CodeUnitCount" : 1439112,
+      "primaryCharacterUnit" : "Unicode code points",
+      "failureEventsCorroborated" : 1
+    },
+    "reasoningSummaryPresence" : {
+      "eventCount" : 1298,
+      "characterCount" : 6673,
+      "usedForClassification" : false
+    },
+    "limitations" : [ {
+      "code" : "REMOTE_AGENT_TELEMETRY_UNAVAILABLE",
+      "description" : "CCA and CCRA internal token, tool, and model telemetry is not present."
+    }, {
+      "code" : "JSONL_COMPLETE_RESULTS_REDACTED_PARTIALS_AVAILABLE",
+      "description" : "Completed tool results are redacted, but partial-result events provide a secondary raw-output source."
+    } ]
+  },
+  "sessions" : [ {
+    "taskIssue" : 6,
+    "shepherdStage" : 30,
+    "sessionId" : "32ac2242-2653-47d7-abdb-e114467ff168",
+    "transcript" : "phase1-task-20261002-205858-6.md",
+    "jsonl" : "phase1-task-20261002-205858-6.jsonl",
+    "otel" : "phase1-otel-20261002-205858-6.jsonl",
+    "prNumber" : null,
+    "startedAt" : "2026-10-02T20:58:59Z",
+    "timestampConversionMethod" : "local_header_zone_offset_calibrated_to_first_jsonl_timestamp",
+    "durationSeconds" : 432,
+    "jsonlDurationMs" : 432054,
+    "aiu" : {
+      "value" : 79.58374,
+      "availability" : "measured",
+      "method" : "Final session usage checkpoint.",
+      "evidenceIds" : [ ]
+    },
+    "premiumRequests" : {
+      "value" : 1,
+      "availability" : "measured",
+      "method" : "Final session usage checkpoint.",
+      "evidenceIds" : [ ]
+    },
+    "tokens" : {
+      "input" : {
+        "value" : 943246,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "output" : {
+        "value" : 8836,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "cacheRead" : {
+        "value" : 890661,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "cacheWrite" : {
+        "value" : 52513,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "reasoning" : {
+        "value" : 1912,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "uncachedInput" : {
+        "value" : 72,
+        "availability" : "derived",
+        "method" : "Input tokens include cache-read and cache-write tokens; this subtracts both.",
+        "evidenceIds" : [ ]
+      },
+      "inputIncludesCacheTokens" : true
+    },
+    "inferenceCalls" : 24,
+    "toolCalls" : 39,
+    "nonzeroToolExits" : 1,
+    "externalizedOutputMarkers" : 1,
+    "confirmedEvidenceGaps" : 0,
+    "partialOutputEvents" : 408,
+    "partialOutputUnicodeCodePoints" : 1395972,
+    "partialOutputUtf16CodeUnits" : 1395972,
+    "reasoningDeltaEvents" : 1206,
+    "reasoningDeltaCharacters" : 6207,
+    "toolExecutionCompleteSuccessTrue" : 38,
+    "toolExecutionCompleteSuccessFalse" : 1,
+    "toolSuccessIsShellFailureSignal" : false,
+    "ccaWaitPollCount" : 0,
+    "ccaWaitElapsedSeconds" : 0,
+    "ccaWaitConfiguredCeilingSeconds" : 0,
+    "remoteAgentCheckObservations" : 0,
+    "testsSkippedMessages" : 0,
+    "ciTestsSkippedMessages" : 0,
+    "loadedSkills" : [ ],
+    "skillNameHashes" : {
+      "shepherd-task-30-from-assignment-to-ready" : "fbbe9ff2b50b3d9ff07cc3ee1f70a821b5ede177540547826ee1daccefd15c0f",
+      "shepherd-task-approve-workflows-and-wait-for-completion" : "3f03ccb0c9eca74099e017889b591316cacc8ce5485df85526d1a73c6be0304b"
+    },
+    "skillContentLengths" : {
+      "shepherd-task-30-from-assignment-to-ready" : 27427,
+      "shepherd-task-approve-workflows-and-wait-for-completion" : 4423
+    },
+    "javaInvocations" : [ {
+      "line" : 707,
+      "executable" : "./mvnw",
+      "javaHome" : "/usr/lib/jvm/msopenjdk-17-amd64/",
+      "availability" : "measured"
+    }, {
+      "line" : 790,
+      "executable" : "./mvnw",
+      "javaHome" : "/usr/lib/jvm/msopenjdk-17-amd64/",
+      "availability" : "measured"
+    }, {
+      "line" : 915,
+      "executable" : "./mvnw",
+      "javaHome" : "/usr/lib/jvm/msopenjdk-17-amd64/",
+      "availability" : "measured"
+    }, {
+      "line" : 1190,
+      "executable" : "./mvnw",
+      "javaHome" : "/usr/lib/jvm/msopenjdk-17-amd64/",
+      "availability" : "measured"
+    } ],
+    "otelMonotonicityViolations" : 0,
+    "flakyTestFailures" : 0,
+    "flakyUnitTestFailures" : 0,
+    "flakyArquillianContainerTestFailures" : 0,
+    "leftoverStateFailures" : 0,
+    "eventIds" : [ "event-0001" ]
+  }, {
+    "taskIssue" : 6,
+    "shepherdStage" : 40,
+    "sessionId" : "47b976c8-eac5-4458-b78c-551df66330c9",
+    "transcript" : "phase2-task-20261002-210705-6.md",
+    "jsonl" : "phase2-task-20261002-210705-6.jsonl",
+    "otel" : "phase2-otel-20261002-210705-6.jsonl",
+    "prNumber" : 11,
+    "startedAt" : "2026-10-02T21:07:06Z",
+    "timestampConversionMethod" : "local_header_zone_offset_calibrated_to_first_jsonl_timestamp",
+    "durationSeconds" : 169,
+    "jsonlDurationMs" : 169355,
+    "aiu" : {
+      "value" : 37.677,
+      "availability" : "measured",
+      "method" : "Final session usage checkpoint.",
+      "evidenceIds" : [ ]
+    },
+    "premiumRequests" : {
+      "value" : 1,
+      "availability" : "measured",
+      "method" : "Final session usage checkpoint.",
+      "evidenceIds" : [ ]
+    },
+    "tokens" : {
+      "input" : {
+        "value" : 280948,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "output" : {
+        "value" : 4563,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "cacheRead" : {
+        "value" : 243305,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "cacheWrite" : {
+        "value" : 37616,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "reasoning" : {
+        "value" : 672,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "uncachedInput" : {
+        "value" : 27,
+        "availability" : "derived",
+        "method" : "Input tokens include cache-read and cache-write tokens; this subtracts both.",
+        "evidenceIds" : [ ]
+      },
+      "inputIncludesCacheTokens" : true
+    },
+    "inferenceCalls" : 9,
+    "toolCalls" : 11,
+    "nonzeroToolExits" : 0,
+    "externalizedOutputMarkers" : 1,
+    "confirmedEvidenceGaps" : 0,
+    "partialOutputEvents" : 33,
+    "partialOutputUnicodeCodePoints" : 43131,
+    "partialOutputUtf16CodeUnits" : 43140,
+    "reasoningDeltaEvents" : 92,
+    "reasoningDeltaCharacters" : 466,
+    "toolExecutionCompleteSuccessTrue" : 11,
+    "toolExecutionCompleteSuccessFalse" : 0,
+    "toolSuccessIsShellFailureSignal" : false,
+    "ccaWaitPollCount" : 0,
+    "ccaWaitElapsedSeconds" : 0,
+    "ccaWaitConfiguredCeilingSeconds" : 0,
+    "remoteAgentCheckObservations" : 0,
+    "testsSkippedMessages" : 0,
+    "ciTestsSkippedMessages" : 0,
+    "loadedSkills" : [ ],
+    "skillNameHashes" : {
+      "shepherd-task-40-from-ready-to-merged-to-base" : "389092470a5d503c169008dad0087ab6a0636e9ebbed84bf61fc03028754223f",
+      "shepherd-task-approve-workflows-and-wait-for-completion" : "3f03ccb0c9eca74099e017889b591316cacc8ce5485df85526d1a73c6be0304b"
+    },
+    "skillContentLengths" : {
+      "shepherd-task-40-from-ready-to-merged-to-base" : 25715,
+      "shepherd-task-approve-workflows-and-wait-for-completion" : 4423
+    },
+    "javaInvocations" : [ ],
+    "otelMonotonicityViolations" : 0,
+    "flakyTestFailures" : 0,
+    "flakyUnitTestFailures" : 0,
+    "flakyArquillianContainerTestFailures" : 0,
+    "leftoverStateFailures" : 0,
+    "eventIds" : [ ]
+  } ],
+  "tasks" : [ {
+    "taskIssue" : 6,
+    "prNumber" : 11,
+    "sessionCount" : 2,
+    "recordedSessionTimeSeconds" : 601,
+    "jsonlSessionTimeMs" : 601409,
+    "ccaWaitPollCount" : 0,
+    "ccaWaitElapsedSeconds" : 0,
+    "ccaWaitConfiguredCeilingSeconds" : 0,
+    "nonzeroToolExits" : 1,
+    "reviewRounds" : 1,
+    "ccraActionableComments" : 0,
+    "stage30ChangeRequests" : 0,
+    "flakyTestFailures" : 0,
+    "flakyUnitTestFailures" : 0,
+    "flakyArquillianContainerTestFailures" : 0,
+    "leftoverStateFailures" : 0
+  } ],
+  "failureEvents" : [ {
+    "id" : "event-0001",
+    "taskIssue" : 6,
+    "prNumber" : null,
+    "sessionId" : "32ac2242-2653-47d7-abdb-e114467ff168",
+    "shepherdStage" : 30,
+    "eventKind" : "nonzero_tool_exit",
+    "relativeOffsetSeconds" : 12,
+    "timestamp" : "2026-10-02T20:59:11Z",
+    "timestampSource" : "transcript_sub_offset",
+    "headSha" : null,
+    "detectionGate" : null,
+    "activity" : "github_api_query",
+    "commandOrCheck" : "gh api repos/edburns/dd-3072707-tricket-out-cargotracker-run-03/contents/1-arrival-deadline-control-remove-before-merge/shepherd-campaign.json -f ref='edburns/dd-3016202-cargotracker-devoxx-be-2026-add-feature-control' --jq '.content' | base64 -d && printf '\\n---ISSUE---\\n' && gh api repos/edburns/dd-3072707-tricket-out-cargotracker-run-03/issues/6 --jq '{number,title,state,assignees:[.assignees[].login],body}'",
+    "exitCode" : 1,
+    "evidence" : {
+      "artifact" : "phase1-task-20261002-205858-6.md",
+      "lineStart" : 271,
+      "lineEnd" : 284,
+      "excerpt" : "```\ngh: Not Found (HTTP 404)\nbase64: invalid input\n<shellId: 0 completed with exit code 1>\n```",
+      "partialOutputCorroborated" : true
+    },
+    "classification" : {
+      "status" : "classified",
+      "category" : "agent_operational_error",
+      "subtype" : "missing_campaign_metadata",
+      "origin" : "shepherd_harness",
+      "ruleId" : "INVALID_REMOTE_RESOURCE_LOOKUP",
+      "explanation" : "The command requested a repository resource or encoded payload that did not exist."
+    },
+    "underlyingProblemId" : "problem-6-30-271",
+    "recurrenceSignature" : "invalid_remote_resource_lookup",
+    "resolution" : {
+      "status" : "recovered",
+      "timestamp" : null,
+      "headSha" : null,
+      "summary" : "A later tool invocation completed successfully in the same session."
+    }
+  } ],
+  "underlyingProblems" : [ {
+    "id" : "problem-6-30-271",
+    "recurrenceSignature" : "invalid_remote_resource_lookup",
+    "eventIds" : [ "event-0001" ]
+  } ],
+  "recurrenceSignatures" : [ {
+    "signature" : "invalid_remote_resource_lookup",
+    "occurrenceCount" : 1,
+    "eventIds" : [ "event-0001" ],
+    "sessions" : [ "32ac2242-2653-47d7-abdb-e114467ff168" ]
+  } ],
+  "productDefects" : [ ],
+  "transitions" : [ {
+    "timestamp" : "2026-10-02T20:59:45Z",
+    "headSha" : null,
+    "check" : "build",
+    "result" : "success",
+    "agentAction" : "set -o pipefail\nREPO='edburns/dd-3072707-tricket-out-cargotracker-run-03'; PR=11\nPR_JSON=$(gh api \"/repos/$REPO/pulls/$PR\")\nBASE_SHA=$(printf '%s' \"$PR_JSON\" | jq -r '.base.sha'); HEAD_SHA=$(printf '%s' \"$PR_JSON\" | jq -r '.head.sha')\nBASE_TREE=$(gh api \"/repos/$REPO/git/commits/$BASE_SHA\" --jq '.tr\n…",
+    "greenToRed" : false
+  }, {
+    "timestamp" : "2026-10-02T20:59:45Z",
+    "headSha" : null,
+    "check" : "source-gates",
+    "result" : "success",
+    "agentAction" : "set -o pipefail\nREPO='edburns/dd-3072707-tricket-out-cargotracker-run-03'; PR=11\nPR_JSON=$(gh api \"/repos/$REPO/pulls/$PR\")\nBASE_SHA=$(printf '%s' \"$PR_JSON\" | jq -r '.base.sha'); HEAD_SHA=$(printf '%s' \"$PR_JSON\" | jq -r '.head.sha')\nBASE_TREE=$(gh api \"/repos/$REPO/git/commits/$BASE_SHA\" --jq '.tr\n…",
+    "greenToRed" : false
+  }, {
+    "timestamp" : "2026-10-02T20:59:45Z",
+    "headSha" : null,
+    "check" : "formatting",
+    "result" : "success",
+    "agentAction" : "set -o pipefail\nREPO='edburns/dd-3072707-tricket-out-cargotracker-run-03'; PR=11\nPR_JSON=$(gh api \"/repos/$REPO/pulls/$PR\")\nBASE_SHA=$(printf '%s' \"$PR_JSON\" | jq -r '.base.sha'); HEAD_SHA=$(printf '%s' \"$PR_JSON\" | jq -r '.head.sha')\nBASE_TREE=$(gh api \"/repos/$REPO/git/commits/$BASE_SHA\" --jq '.tr\n…",
+    "greenToRed" : false
+  }, {
+    "timestamp" : "2026-10-02T20:59:45Z",
+    "headSha" : null,
+    "check" : "Shepherd task Cargo Tracker",
+    "result" : "success",
+    "agentAction" : "set -o pipefail\nREPO='edburns/dd-3072707-tricket-out-cargotracker-run-03'; PR=11\nPR_JSON=$(gh api \"/repos/$REPO/pulls/$PR\")\nBASE_SHA=$(printf '%s' \"$PR_JSON\" | jq -r '.base.sha'); HEAD_SHA=$(printf '%s' \"$PR_JSON\" | jq -r '.head.sha')\nBASE_TREE=$(gh api \"/repos/$REPO/git/commits/$BASE_SHA\" --jq '.tr\n…",
+    "greenToRed" : false
+  }, {
+    "timestamp" : "2026-10-02T20:59:45Z",
+    "headSha" : null,
+    "check" : "copilot",
+    "result" : "success",
+    "agentAction" : "set -o pipefail\nREPO='edburns/dd-3072707-tricket-out-cargotracker-run-03'; PR=11\nPR_JSON=$(gh api \"/repos/$REPO/pulls/$PR\")\nBASE_SHA=$(printf '%s' \"$PR_JSON\" | jq -r '.base.sha'); HEAD_SHA=$(printf '%s' \"$PR_JSON\" | jq -r '.head.sha')\nBASE_TREE=$(gh api \"/repos/$REPO/git/commits/$BASE_SHA\" --jq '.tr\n…",
+    "greenToRed" : false
+  }, {
+    "timestamp" : "2026-10-02T21:09:26Z",
+    "headSha" : null,
+    "check" : "build",
+    "result" : "success",
+    "agentAction" : "set -u\nREPO='edburns/dd-3072707-tricket-out-cargotracker-run-03'; BRANCH='copilot/4-5-integrate-deadline-editing'; PR=11\nPENDING=$(gh run list -R \"$REPO\" --branch \"$BRANCH\" --json databaseId,conclusion --jq '.[] | select(.conclusion == \"action_required\") | .databaseId')\nfor RUN in $PENDING; do\n  OK=\n…",
+    "greenToRed" : false
+  }, {
+    "timestamp" : "2026-10-02T21:09:26Z",
+    "headSha" : null,
+    "check" : "source-gates",
+    "result" : "success",
+    "agentAction" : "set -u\nREPO='edburns/dd-3072707-tricket-out-cargotracker-run-03'; BRANCH='copilot/4-5-integrate-deadline-editing'; PR=11\nPENDING=$(gh run list -R \"$REPO\" --branch \"$BRANCH\" --json databaseId,conclusion --jq '.[] | select(.conclusion == \"action_required\") | .databaseId')\nfor RUN in $PENDING; do\n  OK=\n…",
+    "greenToRed" : false
+  }, {
+    "timestamp" : "2026-10-02T21:09:26Z",
+    "headSha" : null,
+    "check" : "formatting",
+    "result" : "success",
+    "agentAction" : "set -u\nREPO='edburns/dd-3072707-tricket-out-cargotracker-run-03'; BRANCH='copilot/4-5-integrate-deadline-editing'; PR=11\nPENDING=$(gh run list -R \"$REPO\" --branch \"$BRANCH\" --json databaseId,conclusion --jq '.[] | select(.conclusion == \"action_required\") | .databaseId')\nfor RUN in $PENDING; do\n  OK=\n…",
+    "greenToRed" : false
+  }, {
+    "timestamp" : "2026-10-02T21:09:26Z",
+    "headSha" : null,
+    "check" : "Shepherd task Cargo Tracker",
+    "result" : "success",
+    "agentAction" : "set -u\nREPO='edburns/dd-3072707-tricket-out-cargotracker-run-03'; BRANCH='copilot/4-5-integrate-deadline-editing'; PR=11\nPENDING=$(gh run list -R \"$REPO\" --branch \"$BRANCH\" --json databaseId,conclusion --jq '.[] | select(.conclusion == \"action_required\") | .databaseId')\nfor RUN in $PENDING; do\n  OK=\n…",
+    "greenToRed" : false
+  } ],
+  "hallucinationSignals" : {
+    "productCode" : {
+      "eventCount" : 0,
+      "distinctSignatureCount" : 0,
+      "evidenceIds" : [ ]
+    },
+    "tooling" : {
+      "eventCount" : 0,
+      "distinctSignatureCount" : 0,
+      "evidenceIds" : [ ]
+    }
+  },
+  "convergence" : {
+    "reviewRounds" : 1,
+    "ccraActionableComments" : 0,
+    "fixCommits" : 0,
+    "stage30Remediations" : 0,
+    "ciRuns" : 1,
+    "ciRerunsSameHead" : 0,
+    "ciObservationCount" : 2,
+    "ciRunCountingMethod" : "Distinct substantive check head SHAs; repeated transcript observations are not reruns.",
+    "reviewCapEvents" : 0,
+    "timeoutEvents" : 0,
+    "idleKillEvents" : 0,
+    "ccaWait" : {
+      "pollCount" : 0,
+      "elapsedSeconds" : 0,
+      "configuredPollCeilingSeconds" : 0,
+      "elapsedMethod" : "Transcript offset from remote background-shell start to its completed read_bash block.",
+      "shareOfRecordedSessionTime" : 0.0,
+      "interpretation" : "Elapsed local waiting proxy; not CCA execution cost or remote-agent telemetry."
+    },
+    "flakiness" : {
+      "flakyTestFailures" : 0,
+      "flakyUnitTestFailures" : 0,
+      "flakyArquillianContainerTestFailures" : 0,
+      "leftoverStateFailures" : 0,
+      "otherKnownCauseFailures" : 0,
+      "unknownCauseFailures" : 0
+    }
+  },
+  "cost" : {
+    "aiu" : {
+      "value" : 117.26074,
+      "availability" : "measured",
+      "method" : "Final session.usage_checkpoint totalNanoAiu per phase session.",
+      "evidenceIds" : [ ]
+    },
+    "premiumRequests" : {
+      "value" : 2,
+      "availability" : "measured",
+      "method" : "Final totalPremiumRequests checkpoint per phase session.",
+      "evidenceIds" : [ ]
+    },
+    "tokens" : {
+      "input" : {
+        "value" : 1224194,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "output" : {
+        "value" : 13399,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "cacheRead" : {
+        "value" : 1133966,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "cacheWrite" : {
+        "value" : 90129,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "reasoning" : {
+        "value" : 2584,
+        "availability" : "measured",
+        "method" : "Last cumulative OTEL export per metric attribute set per file.",
+        "evidenceIds" : [ ]
+      },
+      "uncachedInput" : {
+        "value" : 99,
+        "availability" : "derived",
+        "method" : "Input tokens include cache-read and cache-write tokens; this subtracts both.",
+        "evidenceIds" : [ ]
+      },
+      "inputIncludesCacheTokens" : true
+    },
+    "inferenceCalls" : {
+      "value" : 33,
+      "availability" : "measured",
+      "method" : "model.call_start count.",
+      "evidenceIds" : [ ]
+    },
+    "toolCalls" : {
+      "value" : 50,
+      "availability" : "measured",
+      "method" : "tool.execution_complete count.",
+      "evidenceIds" : [ ]
+    },
+    "byShepherdStage" : {
+      "30" : {
+        "aiu" : {
+          "value" : 79.58374,
+          "availability" : "measured",
+          "method" : "Usage checkpoints.",
+          "evidenceIds" : [ ]
+        },
+        "premiumRequests" : {
+          "value" : 1,
+          "availability" : "measured",
+          "method" : "Usage checkpoints.",
+          "evidenceIds" : [ ]
+        },
+        "tokens" : {
+          "input" : {
+            "value" : 943246,
+            "availability" : "measured",
+            "method" : "Last cumulative OTEL export per metric attribute set per file.",
+            "evidenceIds" : [ ]
+          },
+          "output" : {
+            "value" : 8836,
+            "availability" : "measured",
+            "method" : "Last cumulative OTEL export per metric attribute set per file.",
+            "evidenceIds" : [ ]
+          },
+          "cacheRead" : {
+            "value" : 890661,
+            "availability" : "measured",
+            "method" : "Last cumulative OTEL export per metric attribute set per file.",
+            "evidenceIds" : [ ]
+          },
+          "cacheWrite" : {
+            "value" : 52513,
+            "availability" : "measured",
+            "method" : "Last cumulative OTEL export per metric attribute set per file.",
+            "evidenceIds" : [ ]
+          },
+          "reasoning" : {
+            "value" : 1912,
+            "availability" : "measured",
+            "method" : "Last cumulative OTEL export per metric attribute set per file.",
+            "evidenceIds" : [ ]
+          },
+          "uncachedInput" : {
+            "value" : 72,
+            "availability" : "derived",
+            "method" : "Input tokens include cache-read and cache-write tokens; this subtracts both.",
+            "evidenceIds" : [ ]
+          },
+          "inputIncludesCacheTokens" : true
+        },
+        "inferenceCalls" : {
+          "value" : 24,
+          "availability" : "measured",
+          "method" : "JSONL events.",
+          "evidenceIds" : [ ]
+        },
+        "toolCalls" : {
+          "value" : 39,
+          "availability" : "measured",
+          "method" : "JSONL events.",
+          "evidenceIds" : [ ]
+        },
+        "recordedWallTimeSeconds" : {
+          "value" : 432,
+          "availability" : "measured",
+          "method" : "Transcript headers.",
+          "evidenceIds" : [ ]
+        }
+      },
+      "40" : {
+        "aiu" : {
+          "value" : 37.677,
+          "availability" : "measured",
+          "method" : "Usage checkpoints.",
+          "evidenceIds" : [ ]
+        },
+        "premiumRequests" : {
+          "value" : 1,
+          "availability" : "measured",
+          "method" : "Usage checkpoints.",
+          "evidenceIds" : [ ]
+        },
+        "tokens" : {
+          "input" : {
+            "value" : 280948,
+            "availability" : "measured",
+            "method" : "Last cumulative OTEL export per metric attribute set per file.",
+            "evidenceIds" : [ ]
+          },
+          "output" : {
+            "value" : 4563,
+            "availability" : "measured",
+            "method" : "Last cumulative OTEL export per metric attribute set per file.",
+            "evidenceIds" : [ ]
+          },
+          "cacheRead" : {
+            "value" : 243305,
+            "availability" : "measured",
+            "method" : "Last cumulative OTEL export per metric attribute set per file.",
+            "evidenceIds" : [ ]
+          },
+          "cacheWrite" : {
+            "value" : 37616,
+            "availability" : "measured",
+            "method" : "Last cumulative OTEL export per metric attribute set per file.",
+            "evidenceIds" : [ ]
+          },
+          "reasoning" : {
+            "value" : 672,
+            "availability" : "measured",
+            "method" : "Last cumulative OTEL export per metric attribute set per file.",
+            "evidenceIds" : [ ]
+          },
+          "uncachedInput" : {
+            "value" : 27,
+            "availability" : "derived",
+            "method" : "Input tokens include cache-read and cache-write tokens; this subtracts both.",
+            "evidenceIds" : [ ]
+          },
+          "inputIncludesCacheTokens" : true
+        },
+        "inferenceCalls" : {
+          "value" : 9,
+          "availability" : "measured",
+          "method" : "JSONL events.",
+          "evidenceIds" : [ ]
+        },
+        "toolCalls" : {
+          "value" : 11,
+          "availability" : "measured",
+          "method" : "JSONL events.",
+          "evidenceIds" : [ ]
+        },
+        "recordedWallTimeSeconds" : {
+          "value" : 169,
+          "availability" : "measured",
+          "method" : "Transcript headers.",
+          "evidenceIds" : [ ]
+        }
+      }
+    }
+  },
+  "environment" : {
+    "sessions" : [ {
+      "taskIssue" : 6,
+      "shepherdStage" : 30,
+      "javaHomesUsed" : [ "/usr/lib/jvm/msopenjdk-17-amd64/" ],
+      "javacSourceTargetReleaseLevels" : [ ],
+      "modelIds" : [ "gpt-5.6-sol" ],
+      "reasoningLevels" : [ "medium" ],
+      "copilotCliVersions" : [ "1.0.91" ],
+      "javaInvocations" : [ {
+        "line" : 707,
+        "executable" : "./mvnw",
+        "javaHome" : "/usr/lib/jvm/msopenjdk-17-amd64/",
+        "availability" : "measured"
+      }, {
+        "line" : 790,
+        "executable" : "./mvnw",
+        "javaHome" : "/usr/lib/jvm/msopenjdk-17-amd64/",
+        "availability" : "measured"
+      }, {
+        "line" : 915,
+        "executable" : "./mvnw",
+        "javaHome" : "/usr/lib/jvm/msopenjdk-17-amd64/",
+        "availability" : "measured"
+      }, {
+        "line" : 1190,
+        "executable" : "./mvnw",
+        "javaHome" : "/usr/lib/jvm/msopenjdk-17-amd64/",
+        "availability" : "measured"
+      } ]
+    }, {
+      "taskIssue" : 6,
+      "shepherdStage" : 40,
+      "javaHomesUsed" : [ ],
+      "javacSourceTargetReleaseLevels" : [ ],
+      "modelIds" : [ "gpt-5.6-sol" ],
+      "reasoningLevels" : [ "medium" ],
+      "copilotCliVersions" : [ "1.0.91" ],
+      "javaInvocations" : [ ]
+    } ]
+  },
+  "runInvariants" : {
+    "shepherdTaskVersion" : "1.0.4",
+    "campaignCreatedWithVersion" : "1.0.4",
+    "models" : [ "gpt-5.6-sol" ],
+    "reasoningLevels" : [ "medium" ],
+    "copilotCliVersions" : [ "1.0.91" ],
+    "skillNameHashes" : {
+      "shepherd-task-30-from-assignment-to-ready" : [ "fbbe9ff2b50b3d9ff07cc3ee1f70a821b5ede177540547826ee1daccefd15c0f" ],
+      "shepherd-task-40-from-ready-to-merged-to-base" : [ "389092470a5d503c169008dad0087ab6a0636e9ebbed84bf61fc03028754223f" ],
+      "shepherd-task-approve-workflows-and-wait-for-completion" : [ "3f03ccb0c9eca74099e017889b591316cacc8ce5485df85526d1a73c6be0304b" ]
+    },
+    "skillContentLengths" : {
+      "shepherd-task-30-from-assignment-to-ready" : [ 27427 ],
+      "shepherd-task-40-from-ready-to-merged-to-base" : [ 25715 ],
+      "shepherd-task-approve-workflows-and-wait-for-completion" : [ 4423 ]
+    },
+    "skillContentVerification" : {
+      "status" : "unverified",
+      "availability" : "unavailable",
+      "expectedArtifact" : "shepherd-task-skill-content-hashes.json",
+      "fallback" : "Telemetry provides skill name hashes and content lengths only."
+    },
+    "loadedSkills" : [ ],
+    "loadedSkillCount" : 0,
+    "allSessionsSameModel" : true,
+    "allSessionsSameReasoningLevel" : true
+  },
+  "ciAnalysis" : {
+    "observedCheckNames" : [ "Shepherd task Cargo Tracker", "build", "copilot", "formatting", "source-gates" ],
+    "substantiveCheckNames" : [ "Shepherd task Cargo Tracker" ],
+    "excludedOrchestrationChecks" : [ ],
+    "remoteAgentCheckObservations" : 0,
+    "testsSkippedMessages" : 0,
+    "ciTestsSkippedMessages" : 0,
+    "testExecution" : {
+      "availability" : "unavailable",
+      "testsExecuted" : null,
+      "testsRun" : null,
+      "reason" : "No conclusive CI test execution evidence was found."
+    },
+    "testsRunByDefault" : true,
+    "controlCiInterpretation" : "tests_enabled_or_treatment_defined"
+  },
+  "interpretationNotes" : [ "Detection stage should be presented per defect and descriptively; a small number of product defects per run does not support significance claims.", "Local AIU and tokens include Shepherd waiting/polling activity; CCA wait is reported separately because remote CCA internals are unavailable.", "Enabling tests in the treatment is a disclosed intervention, not evaluator-detected control-arm tampering.", "If the treatment raises the Java release level, disclose that it also removes the JDK-25/source-7 operational failure mode." ],
+  "humanInterventions" : [ ],
+  "repositoryAnalysis" : {
+    "availability" : "measured",
+    "startSha" : "f586a46fdbe252b57b2cf473361256cc8e225361",
+    "finalSha" : "f3214c3e56cb2cf55c9d2d78dad9920812640b8d",
+    "tasks" : [ {
+      "taskIssue" : 6,
+      "prNumber" : 11,
+      "baseSha" : "f586a46fdbe252b57b2cf473361256cc8e225361",
+      "headSha" : "0f9cebb0aed65a80c215270ee73fa2d584a9e0ef",
+      "mergeSha" : "f3214c3e56cb2cf55c9d2d78dad9920812640b8d",
+      "diff" : {
+        "files" : 51,
+        "additions" : 13,
+        "deletions" : 131109,
+        "commits" : 2,
+        "buildFilesChanged" : 0,
+        "dependencyChurnLines" : 7,
+        "split" : {
+          "production" : {
+            "files" : 51,
+            "additions" : 13,
+            "deletions" : 131109
+          },
+          "test" : {
+            "files" : 0,
+            "additions" : 0,
+            "deletions" : 0
+          },
+          "config" : {
+            "files" : 0,
+            "additions" : 0,
+            "deletions" : 0
+          }
+        }
+      },
+      "reviewCommentsPer100ChangedLines" : {
+        "value" : 0,
+        "availability" : "derived",
+        "method" : "CCRA comments / changed lines * 100.",
+        "evidenceIds" : [ ]
+      },
+      "testIntegrity" : {
+        "baseline" : {
+          "startSha" : "f586a46fdbe252b57b2cf473361256cc8e225361",
+          "testsRunByDefault" : true,
+          "skipTests" : false,
+          "mavenCompilerSource" : null,
+          "mavenCompilerTarget" : null,
+          "mavenCompilerRelease" : null,
+          "testExecutionMode" : "executed",
+          "containerTestTarget" : "unknown"
+        },
+        "meaningfulness" : {
+          "status" : "meaningful",
+          "reason" : "Tests run by default or test execution is a disclosed treatment characteristic."
+        },
+        "changes" : {
+          "testFilesModified" : 0,
+          "testFilesDeleted" : 0,
+          "disabledAnnotationsAdded" : 0,
+          "skipFlagsAdded" : 0,
+          "skipFlagsRemoved" : 20,
+          "testExclusionsAdded" : 0,
+          "assertionsAdded" : 0,
+          "assertionsRemoved" : 252,
+          "ciTestCommandsChanged" : 2456
+        },
+        "tamperingSignals" : [ ]
+      }
+    } ],
+    "campaignDiff" : {
+      "files" : 2,
+      "additions" : 13,
+      "deletions" : 2,
+      "commits" : 3,
+      "buildFilesChanged" : 0,
+      "dependencyChurnLines" : 0,
+      "split" : {
+        "production" : {
+          "files" : 2,
+          "additions" : 13,
+          "deletions" : 2
+        },
+        "test" : {
+          "files" : 0,
+          "additions" : 0,
+          "deletions" : 0
+        },
+        "config" : {
+          "files" : 0,
+          "additions" : 0,
+          "deletions" : 0
+        }
+      }
+    },
+    "baselineVerification" : {
+      "baselineEnablementCommit" : "e7b651f",
+      "isAncestorOfStartSha" : true,
+      "diffStat" : ".github/copilot-instructions.md                                                  |    47 +\n .github/workflows/main.yml                                                       |   368 +\n .github/workflows/shepherd-task-cargotracker.yml                                 |    22 +\n .gitignore                                                                       |     4 +\n .mvn/wrapper/maven-wrapper.properties                                            |    19 +\n .../add-change-arrival-deadline-feature-ignorance-reduction-plan.md              |   921 ++\n 1-arrival-deadline-control-remove-before-merge/campaign-lessons.md               |     8 +\n .../20261002-1410-invoke-shepherd-task-20-create-issues-from-plan-skill.md       |    32 +\n .../20261002-1410-invoke-shepherd-task-20-create-issues-from-plan-skill.sh       |    22 +\n .../prompts/shepherd-task-20-20261002-1410/campaign-lessons-source.md            |     8 +\n .../prompts/shepherd-task-20-20261002-1410/campaign-source.json                  |    16 +\n .../shepherd-task-20-20261002-1410/create-issues-otel-20261002-1410.jsonl        |    76 +\n .../shepherd-task-20-20261002-1410/create-issues-session-20261002-1410.jsonl     | 10247 ++++++++++++++++\n .../shepherd-task-20-20261002-1410/create-issues-session-20261002-1410.md        |  1967 +++\n .../prompts/shepherd-task-20-20261002-1410/creation-ledger.json                  |    52 +\n .../prompts/shepherd-task-20-20261002-1410/final-children.json                   |   962 ++\n .../prompts/shepherd-task-20-20261002-1410/issue-bodies/01-4-1-body.md           |    69 +\n .../prompts/shepherd-task-20-20261002-1410/issue-bodies/02-4-2-body.md           |    67 +\n .../prompts/shepherd-task-20-20261002-1410/issue-bodies/03-4-3-body.md           |    68 +\n .../prompts/shepherd-task-20-20261002-1410/issue-bodies/04-4-4-body.md           |    69 +\n .../prompts/shepherd-task-20-20261002-1410/issue-bodies/05-4-5-body.md           |    70 +\n .../prompts/shepherd-task-20-20261002-1410/plan-source.md                        |   921 ++\n .../prompts/shepherd-task-20-20261002-1410/pre-creation-children.json            |     1 +\n .../prompts/shepherd-task-20-20261002-1410/shepherd-test-experiment-handoff.json |    41 +\n .../prompts/shepherd-task-20-20261002-1410/stage-20-result.json                  |     6 +\n 1-arrival-deadline-control-remove-before-merge/shepherd-campaign.json            |    16 +\n .../20261002-1932-post-mortem.md                                                 |   217 +\n .../phase1-otel-20261002-141418-2.jsonl                                          |   618 +\n .../phase1-otel-20261002-145748-3.jsonl                                          |   718 ++\n .../phase1-otel-20261002-155708-4.jsonl                                          |   647 +\n .../phase1-otel-20261002-171627-5.jsonl                                          |   992 ++\n .../phase1-otel-20261002-184308-6.jsonl                                          |   572 +\n .../phase1-task-20261002-141418-2.jsonl                                          | 10934 +++++++++++++++++\n .../phase1-task-20261002-141418-2.md                                             |  1483 +++\n .../phase1-task-20261002-145748-3.jsonl                                          | 14264 ++++++++++++++++++++++\n .../phase1-task-20261002-145748-3.md                                             |  1879 +++\n .../phase1-task-20261002-155708-4.jsonl                                          | 10403 ++++++++++++++++\n .../phase1-task-20261002-155708-4.md                                             |  2846 +++++\n .../phase1-task-20261002-171627-5.jsonl                                          | 24268 +++++++++++++++++++++++++++++++++++++\n .../phase1-task-20261002-171627-5.md                                             |  3380 ++++++\n .../phase1-task-20261002-184308-6.jsonl                                          |  4769 ++++++++\n .../phase1-task-20261002-184308-6.md                                             |  1472 +++\n .../phase2-otel-20261002-145226-2.jsonl                                          |    77 +\n .../phase2-otel-20261002-154511-3.jsonl                                          |   148 +\n .../phase2-otel-20261002-164228-4.jsonl                                          |   505 +\n .../phase2-otel-20261002-182521-5.jsonl                                          |   102 +\n .../phase2-task-20261002-145226-2.jsonl                                          |  3143 +++++\n .../phase2-task-20261002-145226-2.md                                             |  1023 ++\n .../phase2-task-20261002-154511-3.jsonl                                          |  6841 +++++++++++\n .../phase2-task-20261002-154511-3.md                                             |  1034 ++\n .../phase2-task-20261002-164228-4.jsonl                                          | 11394 +++++++++++++++++\n .../phase2-task-20261002-164228-4.md                                             |  2631 ++++\n .../phase2-task-20261002-182521-5.jsonl                                          |  4702 +++++++\n .../phase2-task-20261002-182521-5.md                                             |  1413 +++\n .../post-mortem-session-20261002-1932.jsonl                                      |  2109 ++++\n .../post-mortem-session-20261002-1932.md                                         |  1807 +++\n .../shepherd-task-25-given-list-run.json                                         |    22 +\n 1-arrival-deadline-control-remove-before-merge/shepherd-test-experiment.json     |     6 +\n dd-3032592-10-boring-reasons-abstract.md                                         |    51 +\n README.md => demo/README.md                                                      |    83 +-\n demo/config/spotbugs-exclude.xml                                                 |    12 +\n demo/mvnw                                                                        |   259 +\n demo/mvnw.cmd                                                                    |   150 +\n demo/observability/README.md                                                     |    41 +\n demo/observability/otel-collector-config.yaml                                    |    60 +\n demo/observability/versions.properties                                           |     3 +\n demo/performance/README.md                                                       |   106 +\n demo/performance/collect-process-metadata.sh                                     |   745 ++\n demo/performance/run-liberty-java.sh                                             |    15 +\n demo/performance/run-liberty-jaz.sh                                              |    24 +\n demo/performance/run-negative-controls.sh                                        |   534 +\n demo/performance/run-workload.sh                                                 |   959 ++\n demo/pom.xml                                                                     |   369 +\n demo/scripts/ci/redact-artifacts.sh                                              |   185 +\n demo/scripts/ci/run-dependency-security-gate.sh                                  |   142 +\n demo/scripts/ci/run-negative-controls.sh                                         |   103 +\n demo/scripts/ci/run-observability-check.sh                                       |   246 +\n demo/scripts/ci/run-observability-negative-controls.sh                           |   167 +\n demo/scripts/ci/run-openliberty-acceptance.sh                                    |   144 +\n demo/scripts/ci/run-safety-net-negative-controls.sh                              |   162 +\n demo/scripts/ci/verify-build-contract.sh                                         |   118 +\n demo/scripts/ci/verify-compatibility-contract.sh                                 |   177 +\n demo/scripts/ci/verify-observability.py                                          |   538 +\n demo/scripts/ci/verify-source-gates.sh                                           |   146 +\n demo/scripts/ci/write-build-metadata.sh                                          |   128 +\n demo/scripts/ci/write-observability-metadata.py                                  |   151 +\n demo/scripts/ci/write-test-inventory.sh                                          |    39 +\n .../src}/main/java/org/eclipse/cargotracker/application/ApplicationEvents.java   |     0\n demo/src/main/java/org/eclipse/cargotracker/application/BookingService.java      |    28 +\n .../main/java/org/eclipse/cargotracker/application/CargoInspectionService.java   |     0\n .../main/java/org/eclipse/cargotracker/application/HandlingEventService.java     |     0\n .../org/eclipse/cargotracker/application/internal/DefaultBookingService.java     |    97 +\n .../eclipse/cargotracker/application/internal/DefaultCargoInspectionService.java |     0\n .../eclipse/cargotracker/application/internal/DefaultHandlingEventService.java   |     0\n .../src}/main/java/org/eclipse/cargotracker/application/internal/package.html    |     0\n {src => demo/src}/main/java/org/eclipse/cargotracker/application/package.html    |     0\n .../src}/main/java/org/eclipse/cargotracker/application/util/DateUtil.java       |     0\n .../src}/main/java/org/eclipse/cargotracker/application/util/LocationUtil.java   |     0\n .../main/java/org/eclipse/cargotracker/application/util/RestConfiguration.java   |    25 +\n .../main/java/org/eclipse/cargotracker/application/util/SampleDataGenerator.java |     0\n .../src}/main/java/org/eclipse/cargotracker/application/util/package.html        |     0\n .../java/org/eclipse/cargotracker/domain/model/cargo/BookingBackingBean.java     |   178 +\n .../src}/main/java/org/eclipse/cargotracker/domain/model/cargo/Cargo.java        |     0\n .../main/java/org/eclipse/cargotracker/domain/model/cargo/CargoRepository.java   |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/model/cargo/Delivery.java     |     0\n .../main/java/org/eclipse/cargotracker/domain/model/cargo/HandlingActivity.java  |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/model/cargo/Itinerary.java    |     0\n {src => demo/src}/main/java/org/eclipse/cargotracker/domain/model/cargo/Leg.java |     0\n .../java/org/eclipse/cargotracker/domain/model/cargo/RouteSpecification.java     |     0\n .../main/java/org/eclipse/cargotracker/domain/model/cargo/RoutingStatus.java     |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/model/cargo/TrackingId.java   |     0\n .../main/java/org/eclipse/cargotracker/domain/model/cargo/TransportStatus.java   |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/model/cargo/package.html      |     0\n .../cargotracker/domain/model/handling/CannotCreateHandlingEventException.java   |     0\n .../main/java/org/eclipse/cargotracker/domain/model/handling/HandlingEvent.java  |     0\n .../org/eclipse/cargotracker/domain/model/handling/HandlingEventFactory.java     |     0\n .../org/eclipse/cargotracker/domain/model/handling/HandlingEventRepository.java  |     0\n .../java/org/eclipse/cargotracker/domain/model/handling/HandlingHistory.java     |     0\n .../org/eclipse/cargotracker/domain/model/handling/UnknownCargoException.java    |     0\n .../org/eclipse/cargotracker/domain/model/handling/UnknownLocationException.java |     0\n .../org/eclipse/cargotracker/domain/model/handling/UnknownVoyageException.java   |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/model/handling/package.html   |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/model/location/Location.java  |     0\n .../java/org/eclipse/cargotracker/domain/model/location/LocationRepository.java  |     0\n .../java/org/eclipse/cargotracker/domain/model/location/SampleLocations.java     |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/model/location/UnLocode.java  |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/model/location/package.html   |     0\n {src => demo/src}/main/java/org/eclipse/cargotracker/domain/model/package.html   |     0\n .../main/java/org/eclipse/cargotracker/domain/model/voyage/CarrierMovement.java  |     0\n .../main/java/org/eclipse/cargotracker/domain/model/voyage/SampleVoyages.java    |   165 +\n .../src}/main/java/org/eclipse/cargotracker/domain/model/voyage/Schedule.java    |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/model/voyage/Voyage.java      |     0\n .../main/java/org/eclipse/cargotracker/domain/model/voyage/VoyageNumber.java     |     0\n .../main/java/org/eclipse/cargotracker/domain/model/voyage/VoyageRepository.java |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/model/voyage/package.html     |     0\n {src => demo/src}/main/java/org/eclipse/cargotracker/domain/package.html         |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/service/RoutingService.java   |     0\n {src => demo/src}/main/java/org/eclipse/cargotracker/domain/service/package.html |     0\n .../main/java/org/eclipse/cargotracker/domain/shared/AbstractSpecification.java  |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/shared/AndSpecification.java  |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/shared/DomainObjectUtils.java |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/shared/NotSpecification.java  |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/shared/OrSpecification.java   |     0\n .../src}/main/java/org/eclipse/cargotracker/domain/shared/Specification.java     |     0\n {src => demo/src}/main/java/org/eclipse/cargotracker/domain/shared/package.html  |     0\n .../java/org/eclipse/cargotracker/infrastructure/events/cdi/CargoInspected.java  |     0\n .../eclipse/cargotracker/infrastructure/messaging/jms/CargoHandledConsumer.java  |     0\n .../cargotracker/infrastructure/messaging/jms/DeliveredCargoConsumer.java        |     0\n .../infrastructure/messaging/jms/HandlingEventRegistrationAttemptConsumer.java   |     0\n .../eclipse/cargotracker/infrastructure/messaging/jms/JmsApplicationEvents.java  |    82 +\n .../cargotracker/infrastructure/messaging/jms/MisdirectedCargoConsumer.java      |     0\n .../infrastructure/messaging/jms/RejectedRegistrationAttemptsConsumer.java       |     0\n .../main/java/org/eclipse/cargotracker/infrastructure/messaging/jms/package.html |     0\n .../eclipse/cargotracker/infrastructure/persistence/jpa/JpaCargoRepository.java  |     0\n .../cargotracker/infrastructure/persistence/jpa/JpaHandlingEventRepository.java  |     0\n .../cargotracker/infrastructure/persistence/jpa/JpaLocationRepository.java       |     0\n .../eclipse/cargotracker/infrastructure/persistence/jpa/JpaVoyageRepository.java |     0\n .../java/org/eclipse/cargotracker/infrastructure/persistence/jpa/package.html    |     0\n .../org/eclipse/cargotracker/infrastructure/routing/ExternalRoutingService.java  |    98 +\n .../src}/main/java/org/eclipse/cargotracker/infrastructure/routing/package.html  |     0\n .../org/eclipse/cargotracker/interfaces/booking/facade/BookingServiceFacade.java |    30 +\n .../java/org/eclipse/cargotracker/interfaces/booking/facade/dto/CargoRoute.java  |   137 +\n .../main/java/org/eclipse/cargotracker/interfaces/booking/facade/dto/Leg.java    |   106 +\n .../java/org/eclipse/cargotracker/interfaces/booking/facade/dto/Location.java    |     0\n .../org/eclipse/cargotracker/interfaces/booking/facade/dto/RouteCandidate.java   |    25 +\n .../java/org/eclipse/cargotracker/interfaces/booking/facade/dto/package.html     |     0\n .../interfaces/booking/facade/internal/DefaultBookingServiceFacade.java          |   107 +\n .../interfaces/booking/facade/internal/assembler/CargoRouteDtoAssembler.java     |     0\n .../booking/facade/internal/assembler/ItineraryCandidateDtoAssembler.java        |    70 +\n .../interfaces/booking/facade/internal/assembler/LocationDtoAssembler.java       |     0\n .../cargotracker/interfaces/booking/facade/internal/assembler/package.html       |     0\n .../org/eclipse/cargotracker/interfaces/booking/facade/internal/package.html     |     0\n .../main/java/org/eclipse/cargotracker/interfaces/booking/facade/package.html    |     0\n .../org/eclipse/cargotracker/interfaces/booking/rest/CargoMonitoringService.java |     0\n .../cargotracker/interfaces/booking/socket/RealtimeCargoTrackingService.java     |    71 +\n .../main/java/org/eclipse/cargotracker/interfaces/booking/web/CargoAdmin.java    |     0\n .../main/java/org/eclipse/cargotracker/interfaces/booking/web/CargoDetails.java  |     0\n .../eclipse/cargotracker/interfaces/booking/web/ChangeArrivalDeadlineDate.java   |    73 +\n .../cargotracker/interfaces/booking/web/ChangeArrivalDeadlineDateDialog.java     |    43 +\n .../java/org/eclipse/cargotracker/interfaces/booking/web/ChangeDestination.java  |     0\n .../org/eclipse/cargotracker/interfaces/booking/web/ChangeDestinationDialog.java |    46 +\n .../main/java/org/eclipse/cargotracker/interfaces/booking/web/DashboardView.java |    46 +\n .../java/org/eclipse/cargotracker/interfaces/booking/web/ItinerarySelection.java |     0\n .../main/java/org/eclipse/cargotracker/interfaces/booking/web/ListCargo.java     |     0\n .../main/java/org/eclipse/cargotracker/interfaces/booking/web/Registration.java  |     0\n .../src}/main/java/org/eclipse/cargotracker/interfaces/booking/web/package.html  |     0\n .../cargotracker/interfaces/handling/HandlingEventRegistrationAttempt.java       |    82 +\n .../org/eclipse/cargotracker/interfaces/handling/file/EventFilesCheckpoint.java  |    44 +\n .../java/org/eclipse/cargotracker/interfaces/handling/file/EventItemReader.java  |     0\n .../java/org/eclipse/cargotracker/interfaces/handling/file/EventItemWriter.java  |     0\n .../eclipse/cargotracker/interfaces/handling/file/EventLineParseException.java   |    24 +\n .../eclipse/cargotracker/interfaces/handling/file/FileProcessorJobListener.java  |     0\n .../cargotracker/interfaces/handling/file/LineParseExceptionListener.java        |     0\n .../eclipse/cargotracker/interfaces/handling/file/UploadDirectoryScanner.java    |     0\n .../main/java/org/eclipse/cargotracker/interfaces/handling/file/package.html     |     0\n .../java/org/eclipse/cargotracker/interfaces/handling/mobile/EventWizard.java    |   167 +\n .../src}/main/java/org/eclipse/cargotracker/interfaces/handling/package.html     |     0\n .../java/org/eclipse/cargotracker/interfaces/handling/rest/HandlingReport.java   |     0\n .../org/eclipse/cargotracker/interfaces/handling/rest/HandlingReportService.java |     0\n .../main/java/org/eclipse/cargotracker/interfaces/handling/rest/package.html     |     0\n .../eclipse/cargotracker/interfaces/tracking/web/CargoTrackingViewAdapter.java   |   226 +\n .../src}/main/java/org/eclipse/cargotracker/interfaces/tracking/web/Track.java   |     0\n .../src}/main/java/org/eclipse/cargotracker/interfaces/tracking/web/package.html |     0\n .../src}/main/java/org/eclipse/pathfinder/api/GraphTraversalService.java         |     0\n demo/src/main/java/org/eclipse/pathfinder/api/TransitEdge.java                   |    84 +\n demo/src/main/java/org/eclipse/pathfinder/api/TransitPath.java                   |    34 +\n {src => demo/src}/main/java/org/eclipse/pathfinder/api/package.html              |     0\n demo/src/main/java/org/eclipse/pathfinder/internal/GraphDao.java                 |    39 +\n {src => demo/src}/main/java/org/eclipse/pathfinder/internal/package.html         |     0\n {src => demo/src}/main/java/org/eclipse/pathfinder/package.html                  |     0\n demo/src/main/liberty/config/bootstrap.properties                                |     3 +\n demo/src/main/liberty/config/server.xml                                          |   107 +\n {src => demo/src}/main/resources/META-INF/batch-jobs/EventFilesProcessorJob.xml  |     0\n {src => demo/src}/main/resources/META-INF/beans.xml                              |     0\n {src => demo/src}/main/resources/META-INF/persistence.xml                        |     0\n {src => demo/src}/main/resources/handling_events.csv                             |     0\n {src => demo/src}/main/resources/org/eclipse/cargotracker/messages.properties    |     0\n {src => demo/src}/main/webapp/WEB-INF/beans.xml                                  |     0\n {src => demo/src}/main/webapp/WEB-INF/faces-config.xml                           |     0\n {src => demo/src}/main/webapp/WEB-INF/templates/common/admin.xhtml               |     0\n {src => demo/src}/main/webapp/WEB-INF/templates/common/public.xhtml              |     0\n {src => demo/src}/main/webapp/WEB-INF/web.xml                                    |     5 -\n {src => demo/src}/main/webapp/admin/about.xhtml                                  |     0\n {src => demo/src}/main/webapp/admin/dashboard.xhtml                              |     0\n demo/src/main/webapp/admin/dialogs/changeArrivalDeadlineDate.xhtml               |    44 +\n {src => demo/src}/main/webapp/admin/dialogs/changeDestination.xhtml              |    11 +-\n {src => demo/src}/main/webapp/admin/route.xhtml                                  |    14 +-\n {src => demo/src}/main/webapp/admin/selectItinerary.xhtml                        |    11 +-\n {src => demo/src}/main/webapp/admin/show.xhtml                                   |     8 +-\n {src => demo/src}/main/webapp/admin/tables/listClaimed.xhtml                     |     0\n {src => demo/src}/main/webapp/admin/tables/listNotRouted.xhtml                   |     0\n {src => demo/src}/main/webapp/admin/tables/listRouted.xhtml                      |     0\n {src => demo/src}/main/webapp/admin/tracking/map.xhtml                           |     0\n {src => demo/src}/main/webapp/admin/tracking/mapFrame.xhtml                      |     0\n {src => demo/src}/main/webapp/admin/tracking/track.xhtml                         |     0\n {src => demo/src}/main/webapp/booking/booking-date.xhtml                         |     0\n {src => demo/src}/main/webapp/booking/booking-destination.xhtml                  |     0\n {src => demo/src}/main/webapp/booking/booking-flow.xml                           |     0\n {src => demo/src}/main/webapp/booking/booking.xhtml                              |     0\n {src => demo/src}/main/webapp/eventLogger/eventLogger.xhtml                      |     0\n {src => demo/src}/main/webapp/index.xhtml                                        |     0\n {src => demo/src}/main/webapp/mobile.xhtml                                       |     0\n {src => demo/src}/main/webapp/public/about.xhtml                                 |     0\n {src => demo/src}/main/webapp/public/track.xhtml                                 |     0\n {src => demo/src}/main/webapp/resources/css/app.css                              |     0\n {src => demo/src}/main/webapp/resources/css/dd.css                               |     0\n {src => demo/src}/main/webapp/resources/css/jquery-jvectormap.css                |     0\n {src => demo/src}/main/webapp/resources/css/title.css                            |     0\n {src => demo/src}/main/webapp/resources/images/CTlogo128.png                     |   Bin\n {src => demo/src}/main/webapp/resources/images/CTlogobadge128.png                |   Bin\n {src => demo/src}/main/webapp/resources/images/calendarTrigger.gif               |   Bin\n {src => demo/src}/main/webapp/resources/images/cargo-tracker-banner-small.png    |   Bin\n {src => demo/src}/main/webapp/resources/images/cargo-tracker-banner.png          |   Bin\n {src => demo/src}/main/webapp/resources/images/cargo-tracker-logo.png            |   Bin\n {src => demo/src}/main/webapp/resources/images/cargoTug.jpg                      |   Bin\n {src => demo/src}/main/webapp/resources/images/cross.png                         |   Bin\n {src => demo/src}/main/webapp/resources/images/error.png                         |   Bin\n {src => demo/src}/main/webapp/resources/images/tick.png                          |   Bin\n .../src}/main/webapp/resources/js/vendor/jquery-jvectormap-world-mill-en.js      |     0\n {src => demo/src}/main/webapp/resources/js/vendor/jquery-jvectormap.js           |     0\n demo/src/test/java/org/eclipse/cargotracker/application/BookingServiceTest.java  |   242 +\n .../org/eclipse/cargotracker/application/BookingServiceTestDataGenerator.java    |     0\n .../eclipse/cargotracker/application/BookingServiceTestRestConfiguration.java    |    21 +\n .../test/java/org/eclipse/cargotracker/application/HandlingEventServiceTest.java |     0\n demo/src/test/java/org/eclipse/cargotracker/architecture/LayeringTest.java       |    72 +\n demo/src/test/java/org/eclipse/cargotracker/domain/model/cargo/CargoTest.java    |   545 +\n .../src/test/java/org/eclipse/cargotracker/domain/model/cargo/ItineraryTest.java |   166 +\n .../java/org/eclipse/cargotracker/domain/model/cargo/RouteSpecificationTest.java |    87 +\n .../java/org/eclipse/cargotracker/domain/model/handling/HandlingEventTest.java   |   121 +\n .../java/org/eclipse/cargotracker/domain/model/handling/HandlingHistoryTest.java |    66 +\n .../eclipse/cargotracker/infrastructure/routing/ExternalRoutingServiceTest.java  |    74 +\n .../org/eclipse/cargotracker/interfaces/booking/facade/BookingFacadeDtoTest.java |    69 +\n .../cargotracker/interfaces/booking/web/ChangeArrivalDeadlineDateDialogTest.java |    83 +\n .../cargotracker/interfaces/booking/web/ChangeArrivalDeadlineDateTest.java       |   218 +\n .../test/java/org/eclipse/cargotracker/scenario/CargoLifecycleScenarioTest.java  |   388 +\n {src => demo/src}/test/resources/arquillian.xml                                  |    11 +-\n {src => demo/src}/test/resources/handling_events.csv                             |     0\n {src => demo/src}/test/resources/test-web.xml                                    |     0\n {src => demo/src}/test/soapui/CargoTracker_soapUI_project.xml                    |     0\n {src => demo/src}/test/soapui/report_json_sample.txt                             |     0\n pom.xml                                                                          |   189 -\n src/main/java/org/eclipse/cargotracker/application/BookingService.java           |    31 -\n .../org/eclipse/cargotracker/application/internal/DefaultBookingService.java     |    87 -\n .../cargotracker/application/util/JsonMoxyConfigurationContextResolver.java      |    26 -\n src/main/java/org/eclipse/cargotracker/application/util/RestConfiguration.java   |    30 -\n .../java/org/eclipse/cargotracker/domain/model/cargo/BookingBackingBean.java     |   180 -\n src/main/java/org/eclipse/cargotracker/domain/model/voyage/SampleVoyages.java    |   123 -\n .../eclipse/cargotracker/infrastructure/messaging/jms/JmsApplicationEvents.java  |    80 -\n .../org/eclipse/cargotracker/infrastructure/routing/ExternalRoutingService.java  |   105 -\n .../org/eclipse/cargotracker/interfaces/booking/facade/BookingServiceFacade.java |    29 -\n .../java/org/eclipse/cargotracker/interfaces/booking/facade/dto/CargoRoute.java  |   138 -\n src/main/java/org/eclipse/cargotracker/interfaces/booking/facade/dto/Leg.java    |    98 -\n .../org/eclipse/cargotracker/interfaces/booking/facade/dto/RouteCandidate.java   |    27 -\n .../interfaces/booking/facade/internal/DefaultBookingServiceFacade.java          |   109 -\n .../booking/facade/internal/assembler/ItineraryCandidateDtoAssembler.java        |    70 -\n .../cargotracker/interfaces/booking/socket/RealtimeCargoTrackingService.java     |    73 -\n .../org/eclipse/cargotracker/interfaces/booking/web/ChangeDestinationDialog.java |    45 -\n src/main/java/org/eclipse/cargotracker/interfaces/booking/web/DashboardView.java |    48 -\n .../cargotracker/interfaces/handling/HandlingEventRegistrationAttempt.java       |    72 -\n .../org/eclipse/cargotracker/interfaces/handling/file/EventFilesCheckpoint.java  |    43 -\n .../eclipse/cargotracker/interfaces/handling/file/EventLineParseException.java   |    23 -\n .../java/org/eclipse/cargotracker/interfaces/handling/mobile/EventWizard.java    |   171 -\n .../eclipse/cargotracker/interfaces/tracking/web/CargoTrackingViewAdapter.java   |   223 -\n src/main/java/org/eclipse/pathfinder/api/TransitEdge.java                        |    78 -\n src/main/java/org/eclipse/pathfinder/api/TransitPath.java                        |    33 -\n src/main/java/org/eclipse/pathfinder/internal/GraphDao.java                      |    37 -\n src/main/webapp/WEB-INF/glassfish-web.xml                                        |    10 -\n src/test/java/org/eclipse/cargotracker/application/BookingServiceTest.java       |   249 -\n .../eclipse/cargotracker/application/BookingServiceTestRestConfiguration.java    |    23 -\n src/test/java/org/eclipse/cargotracker/domain/model/cargo/CargoTest.java         |   358 -\n src/test/java/org/eclipse/cargotracker/domain/model/cargo/ItineraryTest.java     |   118 -\n .../java/org/eclipse/cargotracker/domain/model/cargo/RouteSpecificationTest.java |    81 -\n .../java/org/eclipse/cargotracker/domain/model/handling/HandlingEventTest.java   |   102 -\n .../java/org/eclipse/cargotracker/domain/model/handling/HandlingHistoryTest.java |    51 -\n .../eclipse/cargotracker/infrastructure/routing/ExternalRoutingServiceTest.java  |    70 -\n src/test/java/org/eclipse/cargotracker/scenario/CargoLifecycleScenarioTest.java  |   370 -\n 316 files changed, 142785 insertions(+), 3683 deletions(-)"
+    },
+    "testIntegrity" : {
+      "baseline" : {
+        "startSha" : "f586a46fdbe252b57b2cf473361256cc8e225361",
+        "testsRunByDefault" : true,
+        "skipTests" : false,
+        "mavenCompilerSource" : null,
+        "mavenCompilerTarget" : null,
+        "mavenCompilerRelease" : null,
+        "testExecutionMode" : "executed",
+        "containerTestTarget" : "unknown"
+      },
+      "meaningfulness" : {
+        "status" : "meaningful",
+        "reason" : "Tests run by default or test execution is a disclosed treatment characteristic."
+      },
+      "changes" : {
+        "testFilesModified" : 0,
+        "testFilesDeleted" : 0,
+        "disabledAnnotationsAdded" : 0,
+        "skipFlagsAdded" : 0,
+        "skipFlagsRemoved" : 0,
+        "testExclusionsAdded" : 0,
+        "assertionsAdded" : 0,
+        "assertionsRemoved" : 0,
+        "ciTestCommandsChanged" : 0
+      },
+      "tamperingSignals" : [ ]
+    },
+    "dry" : {
+      "minimumTokens" : 100,
+      "baseline" : {
+        "availability" : "unavailable",
+        "reason" : "[ERROR] Failed to execute goal org.apache.maven.plugins:maven-pmd-plugin:3.25.0:cpd (default-cli): Goal requires a project to execute but there is no POM in this directory (/private/var/folders/vc/_9vlsvsd7wg72zf3bf0z_1k00000gn/T/shepherd-task-evaluator-cpd-13284379259528485009). Please verify you invoked Maven from the correct directory. -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException",
+        "productionBlocks" : null,
+        "testBlocks" : null,
+        "duplicatedLines" : null
+      },
+      "final" : {
+        "availability" : "unavailable",
+        "reason" : "[ERROR] Failed to execute goal org.apache.maven.plugins:maven-pmd-plugin:3.25.0:cpd (default-cli): Goal requires a project to execute but there is no POM in this directory (/private/var/folders/vc/_9vlsvsd7wg72zf3bf0z_1k00000gn/T/shepherd-task-evaluator-cpd-718294962210594352). Please verify you invoked Maven from the correct directory. -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException",
+        "productionBlocks" : null,
+        "testBlocks" : null,
+        "duplicatedLines" : null
+      },
+      "newDuplication" : {
+        "value" : null,
+        "availability" : "unavailable",
+        "reason" : "PMD CPD did not complete for both revisions.",
+        "evidenceIds" : [ ]
+      }
+    },
+    "buildWarnings" : {
+      "jdk" : "17",
+      "compilerLint" : "deprecation,removal",
+      "baseline" : {
+        "availability" : "unavailable",
+        "exitCode" : 1,
+        "warnings" : [ ],
+        "outputExcerpt" : "[INFO] Scanning for projects...\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.033 s\n[INFO] Finished at: 2026-10-02T18:06:39-04:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/private/var/folders/vc/_9vlsvsd7wg72zf3bf0z_1k00000gn/T/shepherd-task-evaluator-build-4083861784589725446). Please verify you invoked Maven from the correct directory. -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException"
+      },
+      "final" : {
+        "availability" : "unavailable",
+        "exitCode" : 1,
+        "warnings" : [ ],
+        "outputExcerpt" : "[INFO] Scanning for projects...\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.034 s\n[INFO] Finished at: 2026-10-02T18:06:40-04:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/private/var/folders/vc/_9vlsvsd7wg72zf3bf0z_1k00000gn/T/shepherd-task-evaluator-build-3650595847428770847). Please verify you invoked Maven from the correct directory. -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException"
+      },
+      "newWarnings" : {
+        "value" : null,
+        "availability" : "unavailable",
+        "reason" : "Both revisions must compile successfully for a warning delta.",
+        "evidenceIds" : [ ]
+      }
+    }
+  },
+  "postMortemAgent" : {
+    "availability" : "measured",
+    "aiu" : {
+      "value" : 94.20882,
+      "availability" : "measured",
+      "method" : "Post-mortem session usage checkpoint.",
+      "evidenceIds" : [ ]
+    },
+    "premiumRequests" : {
+      "value" : 1,
+      "availability" : "measured",
+      "method" : "Post-mortem checkpoint.",
+      "evidenceIds" : [ ]
+    },
+    "inferenceCalls" : {
+      "value" : 13,
+      "availability" : "measured",
+      "method" : "Post-mortem JSONL.",
+      "evidenceIds" : [ ]
+    },
+    "toolCalls" : {
+      "value" : 42,
+      "availability" : "measured",
+      "method" : "Post-mortem JSONL.",
+      "evidenceIds" : [ ]
+    },
+    "externalLargeOutputReferences" : {
+      "value" : 0,
+      "availability" : "measured",
+      "method" : "Post-mortem JSONL.",
+      "evidenceIds" : [ ]
+    },
+    "tokens" : {
+      "value" : null,
+      "availability" : "unavailable",
+      "reason" : "No post-mortem OTEL artifact is present in the campaign directory.",
+      "evidenceIds" : [ ]
+    }
+  },
+  "unclassified" : [ ],
+  "reconciliation" : {
+    "availability" : "unavailable",
+    "reason" : "No built-in acceptance profile exists for this campaign."
+  }
+}
