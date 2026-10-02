@@ -38,8 +38,7 @@ class DefaultBookingServiceFacadeTest {
     private Date arrivalDeadline;
 
     @Override
-    public TrackingId bookNewCargo(
-        UnLocode origin, UnLocode destination, Date arrivalDeadline) {
+    public TrackingId bookNewCargo(UnLocode origin, UnLocode destination, Date arrivalDeadline) {
       return null;
     }
 
