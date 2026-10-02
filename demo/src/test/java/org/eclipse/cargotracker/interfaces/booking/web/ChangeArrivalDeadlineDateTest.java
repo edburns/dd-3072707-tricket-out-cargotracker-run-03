@@ -58,6 +58,21 @@ class ChangeArrivalDeadlineDateTest {
   }
 
   @Test
+  void missingCargoIsSurfaced() throws Exception {
+    ChangeArrivalDeadlineDate bean = new ChangeArrivalDeadlineDate();
+    FakeBookingServiceFacade facade = new FakeBookingServiceFacade();
+    injectFacade(bean, facade);
+    bean.setTrackingId("MISSING");
+
+    FacesException exception = assertThrows(FacesException.class, bean::load);
+
+    assertTrue(exception.getMessage().contains("No cargo found"));
+    assertEquals("MISSING", facade.loadedTrackingId);
+    assertNull(bean.getCargo());
+    assertNull(bean.getArrivalDeadlineDate());
+  }
+
+  @Test
   void changeForwardsSelectedDateAndClosesOnSuccess() throws Exception {
     ChangeArrivalDeadlineDate bean = new ChangeArrivalDeadlineDate();
     FakeBookingServiceFacade facade = new FakeBookingServiceFacade();
