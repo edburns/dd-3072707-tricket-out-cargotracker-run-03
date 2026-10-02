@@ -1,0 +1,41 @@
+{
+  "schemaVersion" : "1.0",
+  "campaigns" : [ {
+    "campaignId" : "cb68d348-f71e-4ce0-a529-ca5a5d5cbc20",
+    "directory" : "/Users/edburns/workareas/dd-3070518-cargotracker-darwin-arm64-01-shepherd-control/1-arrival-deadline-control-remove-before-merge/shepherd-tasks-cb68d348-f71e-4ce0-a529-ca5a5d5cbc20-20260928-1940-eval",
+    "arm" : "control",
+    "invariants" : {
+      "copilotCliVersions" : "[\"1.0.89\"]",
+      "stage30SkillContentLength" : "[25804]",
+      "skillContentVerification" : "unverified",
+      "models" : "[\"gpt-5.6-sol\"]",
+      "reasoningLevels" : "[\"medium\"]"
+    }
+  }, {
+    "campaignId" : "a63d175f-0ce7-4430-850d-c134a707f88c",
+    "directory" : "/Users/edburns/workareas/dd-3072707-tricket-out-cargotracker-run-03/1-arrival-deadline-control-remove-before-merge/shepherd-tasks-a63d175f-0ce7-4430-850d-c134a707f88c-combined-eval",
+    "arm" : "treatment",
+    "invariants" : {
+      "copilotCliVersions" : "[\"1.0.91\"]",
+      "stage30SkillContentLength" : "[27427]",
+      "skillContentVerification" : "unverified",
+      "models" : "[\"gpt-5.6-sol\"]",
+      "reasoningLevels" : "[\"medium\"]"
+    }
+  } ],
+  "invariantDrift" : [ {
+    "invariant" : "copilotCliVersions",
+    "warning" : true,
+    "observed" : {
+      "cb68d348-f71e-4ce0-a529-ca5a5d5cbc20" : "[\"1.0.89\"]",
+      "a63d175f-0ce7-4430-850d-c134a707f88c" : "[\"1.0.91\"]"
+    }
+  }, {
+    "invariant" : "stage30SkillContentLength",
+    "warning" : true,
+    "observed" : {
+      "cb68d348-f71e-4ce0-a529-ca5a5d5cbc20" : "[25804]",
+      "a63d175f-0ce7-4430-850d-c134a707f88c" : "[27427]"
+    }
+  } ]
+}
