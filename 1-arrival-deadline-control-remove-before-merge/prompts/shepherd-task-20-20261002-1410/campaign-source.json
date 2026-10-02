@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "a63d175f-0ce7-4430-850d-c134a707f88c",
+  "campaignIssueNumber": 1,
+  "campaignShortname": "arrival-deadline-control",
+  "repository": "edburns/dd-3072707-tricket-out-cargotracker-run-03",
+  "baseBranch": "edburns/dd-3016202-cargotracker-devoxx-be-2026-add-feature-control",
+  "lessonPropagation": "off",
+  "campaignMetadataDirectory": "1-arrival-deadline-control-remove-before-merge",
+  "lessonsFile": "campaign-lessons.md",
+  "createdBy": {
+    "shepherdTaskVersion": "1.0.4",
+    "stageOutcomeProtocolVersion": 1
+  },
+  "createdAt": "2026-10-02T14:10:02Z"
+}
